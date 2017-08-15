@@ -18,6 +18,7 @@ class LinkedList:
     # Counts the no . of occurances of a node
     # (seach_for) in a linkded list (head)
     def count(self, search_for):
+        # Dict to keep count of every int in linked list
         freq = {}
         current = self.head
         while current:
