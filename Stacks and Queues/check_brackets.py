@@ -1,5 +1,6 @@
 # python2
 
+# Code to check if brackets are balanced and return the index of first unbalanced bracket.
 import sys
 
 class Bracket:
@@ -22,11 +23,11 @@ if __name__ == "__main__":
     opening_brackets_stack = []
     for i, next in enumerate(text):
         if next == '(' or next == '[' or next == '{':
-            # Process opening bracket, write your code here
+            # Process opening bracket
             opening_brackets_stack.append(Bracket(next,i))
 
         if next == ')' or next == ']' or next == '}':
-            # Process closing bracket, write your code here
+            # Process closing bracket
             if (not opening_brackets_stack):
                 print (i+1)
                 res = "False"
@@ -48,4 +49,4 @@ if __name__ == "__main__":
 
 
 
-    # Printing answer, write your code here
+   
